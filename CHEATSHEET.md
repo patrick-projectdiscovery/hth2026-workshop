@@ -244,7 +244,7 @@ http:
 
 | | |
 |---|---|
-| **This Repo** | github.com/patrickgleason/hth2026-workshop |
+| **This Repo** | github.com/patrick-projectdiscovery/hth2026-workshop |
 | **PD Docs** | docs.projectdiscovery.io |
 | **Nuclei Templates** | github.com/projectdiscovery/nuclei-templates |
 | **PDCP** | cloud.projectdiscovery.io |
