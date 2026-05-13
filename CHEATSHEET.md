@@ -245,9 +245,7 @@ http:
 
 ## Neo Token Challenge — What to Find
 
-There are **14 scanner-detectable findings** across the target environment. Find them all and show your Nuclei output to a facilitator for free Neo tokens.
-
-**10 findings** are discoverable with the open source pipeline:
+Find **10 scanner-detectable findings** with the open source pipeline and show your Nuclei output to a facilitator for free Neo tokens.
 
 | Category | Count |
 |---|---|
@@ -258,7 +256,7 @@ There are **14 scanner-detectable findings** across the target environment. Find
 | Default credentials | 1 |
 | Known CVE (tech fingerprinting) | 1 |
 
-The remaining **4 points** come from the PDCP segment — working through platform workflows (asset inventory, posture comparison, continuous scanning, remediation tracking) using the findings you already discovered.
+The PDCP segment (1:15–1:30) adds **4 more workshop points** through platform workflows — asset inventory, posture comparison, continuous scanning, remediation tracking. Those are separate from the token challenge.
 
 > Scan all subdomains you discover during recon, not just the portal. The interesting findings are not all in one place.
 

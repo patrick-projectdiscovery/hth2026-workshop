@@ -104,8 +104,8 @@ More accounts exist. Finding them is part of the fun.
 |---|---|---|
 | 0:00–0:20 | **Recon Pipeline** | Subdomain discovery, DNS resolution, HTTP probing |
 | 0:20–0:40 | **Vulnerability Scanning** | Run Nuclei against the target, find 10+ findings |
-| 0:40–1:10 | **Write a Nuclei Template** | Detect the exposed config endpoint on staging |
-| 1:10–1:15 | **Neo Token Challenge** | Found all 14 scanner-detectable vulns? Show your nuclei output to a facilitator for free Neo tokens. |
+| 0:40–1:10 | **Write a Nuclei Template** | Write a template for an endpoint you found during recon |
+| 1:10–1:15 | **Neo Token Challenge** | Found all 10 scanner-detectable vulns with the open source pipeline? Show your nuclei output to a facilitator for free Neo tokens. |
 | 1:15–1:30 | **PD Cloud Platform** | Same target at enterprise scale — add it to your own dashboard |
 | 1:30–1:55 | **Neo AI Pentesting** | Watch an AI agent find business logic bugs live |
 | 1:55–2:00 | **Wrap-Up** | Resources, Q&A |
