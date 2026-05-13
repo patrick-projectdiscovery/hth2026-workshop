@@ -229,15 +229,19 @@ http:
 
 | Subdomain | What's There |
 |---|---|
-| `spaceballscorp.com` | Corporate site — start your recon here |
+| `spaceballscorp.com` | Corporate site |
 | `portal.spaceballscorp.com` | Employee portal (your login) |
+| `admin.spaceballscorp.com` | Admin panel |
+| `api.spaceballscorp.com` | REST API (requires auth) |
+| `docs.spaceballscorp.com` | Swagger / API documentation |
+| `staging.spaceballscorp.com` | Staging environment (debug mode) |
 
-> There are more subdomains. Finding them is part of the exercise — use subfinder and dnsx.
-
-### Accounts
+### Your Account
 | User | Pass | Role |
 |---|---|---|
 | `lone_starr` | `12345` | Employee |
+
+More accounts exist — finding them is part of the exercise.
 
 ---
 
@@ -245,18 +249,16 @@ http:
 
 Find **10 scanner-detectable findings** with the open source pipeline and show your Nuclei output to a facilitator for free Neo tokens.
 
-| Category | Count |
-|---|---|
-| Secrets and credential exposures | 4 |
-| Exposed endpoints and files | 2 |
-| CORS misconfiguration | 1 |
-| Missing security controls | 1 |
-| Default credentials | 1 |
-| Known CVE (tech fingerprinting) | 1 |
+| Category | Count | Hint |
+|---|---|---|
+| Secrets and credential exposures | 4 | Check staging carefully |
+| Exposed endpoints and files | 2 | Not just staging |
+| CORS misconfiguration | 1 | Test with an arbitrary Origin header |
+| Missing security controls | 1 | What's missing from login? |
+| Default credentials | 1 | Try the creds you found on the admin panel |
+| Known CVE (tech fingerprinting) | 1 | What's the web server version? |
 
-The PDCP segment (1:15–1:30) adds **4 more workshop points** through platform workflows — asset inventory, posture comparison, continuous scanning, remediation tracking. Those are separate from the token challenge.
-
-> Scan all subdomains you discover during recon, not just the portal. The interesting findings are not all in one place.
+The PDCP segment (1:15–1:30) covers four platform workflows — asset inventory, posture comparison, continuous scanning, and remediation tracking. A facilitator will walk through each step live.
 
 ---
 

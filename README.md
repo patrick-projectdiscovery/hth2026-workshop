@@ -82,17 +82,19 @@ If all required tools show `[✓]`, you're good to go.
 |---|---|
 | Corporate Site | https://spaceballscorp.com |
 | Employee Portal | https://portal.spaceballscorp.com |
-
-> There are more subdomains in scope. Finding them is the first part of the workshop.
+| Admin Panel | https://admin.spaceballscorp.com |
+| REST API | https://api.spaceballscorp.com |
+| API Docs | https://docs.spaceballscorp.com |
+| Staging | https://staging.spaceballscorp.com |
 
 > ⚠️ **This is a deliberately vulnerable application.** Only interact with it during the workshop or with explicit permission. Do not attack infrastructure outside of the target scope.
 
-### Test Accounts
+### Your Account
 | Username | Password | Role |
 |---|---|---|
 | `lone_starr` | `12345` | Employee |
 
-More accounts exist. Finding them is part of the fun.
+More accounts exist. Finding them is part of the exercise.
 
 ---
 
