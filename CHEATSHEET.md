@@ -258,7 +258,7 @@ There are **14 scanner-detectable findings** across the target environment. Find
 | Default credentials | 1 |
 | Known CVE (tech fingerprinting) | 1 |
 
-**4 more** become visible when you view the full asset inventory in PDCP.
+The remaining **4 points** come from the PDCP segment — working through platform workflows (asset inventory, posture comparison, continuous scanning, remediation tracking) using the findings you already discovered.
 
 > Scan all subdomains you discover during recon, not just the portal. The interesting findings are not all in one place.
 
