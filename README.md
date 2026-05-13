@@ -14,7 +14,7 @@ A 2-hour hands-on workshop where you'll run the full ProjectDiscovery recon-to-v
 **Before the workshop**, clone this repo and get your tools installed.
 
 ```bash
-git clone https://github.com/patrickgleason/hth2026-workshop
+git clone https://github.com/patrick-projectdiscovery/hth2026-workshop
 cd hth2026-workshop
 ```
 
