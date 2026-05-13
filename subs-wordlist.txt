@@ -1,11 +1,11 @@
 # Spaceballs Galactic Defense Corp — Subdomain Wordlist
 # HTH 2026 Workshop — From Recon to Remediation
 # Mix of plausible enterprise subdomains and Spaceballs-themed entries
-# Real targets are in here. Happy hunting.
+# Real targets are in here — pipe through httpx to see which ones serve actual content.
 #
-# NOTE: spaceballscorp.com does NOT use wildcard DNS.
-# Every resolved name is a real host — no false positives from wildcard catch-alls.
-# If a name resolves, it's worth probing with httpx.
+# NOTE: spaceballscorp.com uses wildcard DNS — every name resolves to the same IP.
+# DNS resolution alone does not mean a host is real. Run dnsx output through httpx
+# to find which subdomains actually serve HTTP content.
 
 # ── Common enterprise subdomains ──────────────────────────────────────────────
 www
