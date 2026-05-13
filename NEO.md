@@ -12,7 +12,7 @@ but use these prompts to follow along or replay it on your own afterward.
 https://portal.spaceballscorp.com
 ```
 
-Log in as `lone_starr / 12345` before starting.
+Log in to the Spaceballs portal at `https://portal.spaceballscorp.com` as `lone_starr / 12345` before starting your Neo session.
 
 ---
 
@@ -31,7 +31,7 @@ Log in as `lone_starr / 12345` before starting.
 > "Look for any approval workflow endpoints that could be exploited — for example, submitting and approving your own requests."
 
 **Chain findings:**
-> "I found the JWT secret at staging.spaceballscorp.com/debug/config. Use it to access endpoints I shouldn't be able to reach as lone_starr."
+> "I found a leaked JWT secret in the environment. Use it to access endpoints I shouldn't be able to reach as lone_starr."
 
 ---
 

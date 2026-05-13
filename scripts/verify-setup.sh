@@ -40,6 +40,7 @@ check_tool() {
 echo -e "${YELLOW}Checking required tools...${NC}"
 echo ""
 check_tool "subfinder" "subfinder" "required"
+check_tool "dnsx" "dnsx" "required"
 check_tool "httpx" "httpx" "required"
 check_tool "nuclei" "nuclei" "required"
 
@@ -48,7 +49,6 @@ echo -e "${YELLOW}Checking recommended tools...${NC}"
 echo ""
 check_tool "naabu" "naabu" "optional"
 check_tool "katana" "katana" "optional"
-check_tool "dnsx" "dnsx" "optional"
 check_tool "cloudlist" "cloudlist" "optional"
 
 echo ""

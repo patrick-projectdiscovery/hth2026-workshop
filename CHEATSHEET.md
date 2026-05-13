@@ -229,17 +229,34 @@ http:
 
 | Subdomain | What's There |
 |---|---|
-| `spaceballscorp.com` | Corporate site |
-| `portal.spaceballscorp.com` | Employee portal (login) |
-| `admin.spaceballscorp.com` | Admin panel |
-| `api.spaceballscorp.com` | REST API |
-| `docs.spaceballscorp.com` | API docs (Swagger) |
-| `staging.spaceballscorp.com` | "Forgotten" staging |
+| `spaceballscorp.com` | Corporate site — start your recon here |
+| `portal.spaceballscorp.com` | Employee portal (your login) |
+
+> There are more subdomains. Finding them is part of the exercise — use subfinder and dnsx.
 
 ### Accounts
 | User | Pass | Role |
 |---|---|---|
 | `lone_starr` | `12345` | Employee |
+
+---
+
+## Neo Token Challenge — What to Find
+
+Find **10 scanner-detectable findings** with the open source pipeline and show your Nuclei output to a facilitator for free Neo tokens.
+
+| Category | Count |
+|---|---|
+| Secrets and credential exposures | 4 |
+| Exposed endpoints and files | 2 |
+| CORS misconfiguration | 1 |
+| Missing security controls | 1 |
+| Default credentials | 1 |
+| Known CVE (tech fingerprinting) | 1 |
+
+The PDCP segment (1:15–1:30) adds **4 more workshop points** through platform workflows — asset inventory, posture comparison, continuous scanning, remediation tracking. Those are separate from the token challenge.
+
+> Scan all subdomains you discover during recon, not just the portal. The interesting findings are not all in one place.
 
 ---
 
