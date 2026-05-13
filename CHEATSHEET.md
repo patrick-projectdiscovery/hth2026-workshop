@@ -85,9 +85,12 @@ nuclei -u https://staging.spaceballscorp.com -tags exposure,config -silent
 nuclei -u https://staging.spaceballscorp.com -t ./my-template.yaml
 ```
 
+> **Template exercise:** `staging.spaceballscorp.com` is your target for the hands-on exercise. Found something interesting there during recon? That's what you're detecting. Open `templates/starter.yaml` and build a template for it.
+
 ### Cloud Asset Discovery
 ```bash
 # Pull assets from cloud providers
+# Requires cloud provider credentials to be configured — see PDCP for cloud asset import
 cloudlist -provider aws,gcp,azure
 
 # Chain into the pipeline
