@@ -2,6 +2,10 @@
 # HTH 2026 Workshop — From Recon to Remediation
 # Mix of plausible enterprise subdomains and Spaceballs-themed entries
 # Real targets are in here. Happy hunting.
+#
+# NOTE: spaceballscorp.com does NOT use wildcard DNS.
+# Every resolved name is a real host — no false positives from wildcard catch-alls.
+# If a name resolves, it's worth probing with httpx.
 
 # ── Common enterprise subdomains ──────────────────────────────────────────────
 www

@@ -12,7 +12,7 @@ but use these prompts to follow along or replay it on your own afterward.
 https://portal.spaceballscorp.com
 ```
 
-Log in as `lone_starr / 12345` before starting.
+Log in to the Spaceballs portal at `https://portal.spaceballscorp.com` as `lone_starr / 12345` before starting your Neo session.
 
 ---
 

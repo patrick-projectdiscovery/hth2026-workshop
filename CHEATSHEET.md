@@ -245,6 +245,32 @@ http:
 
 ---
 
+## Neo Token Challenge — Vuln Checklist
+
+Find all 14 and show your nuclei output to a facilitator for free Neo tokens.
+
+**Section 1 — Scanner-detectable (Nuclei + tools)**
+
+- [ ] 1. Exposed `.env` file on `staging.spaceballscorp.com`
+- [ ] 2. Debug config dump at `/debug/config` (JWT secret, AWS keys)
+- [ ] 3. Git config exposure at `/.git/config`
+- [ ] 4. Directory listing on `docs.spaceballscorp.com/static/`
+- [ ] 5. Server status at `portal.spaceballscorp.com/server-status`
+- [ ] 6. Missing security headers (`CSP`, `X-Frame-Options`, `HSTS`, `X-Content-Type-Options`)
+- [ ] 7. Default admin credentials (`dark_helmet` / `spaceballs`)
+- [ ] 8. Outdated jQuery (v3.3.1 — CVE-2020-11022/11023)
+- [ ] 9. AWS key hardcoded in `/static/js/portal.js`
+- [ ] 10. CORS misconfiguration (reflects arbitrary origin with credentials)
+
+**Section 2 — Scale findings (PDCP)**
+
+- [ ] 11. Staging vs production posture gap (debug endpoints on staging only)
+- [ ] 12. Hardcoded credentials in static JS (caught on every new deploy)
+- [ ] 13. Deploy token in `staging/.git/config`
+- [ ] 14. Inconsistent auth scope (portal JWT accepted on admin API endpoints)
+
+---
+
 ## Links
 
 | | |
