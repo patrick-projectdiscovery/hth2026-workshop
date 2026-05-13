@@ -58,6 +58,12 @@ go install -v github.com/projectdiscovery/katana/cmd/katana@latest
 go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 ```
 
+### Sign up for PDCP (free tier)
+
+You'll need a ProjectDiscovery Cloud Platform account for Part 2 of the workshop. Sign up now so you're ready:
+
+👉 [cloud.projectdiscovery.io](https://cloud.projectdiscovery.io)
+
 ### Verify your install
 ```bash
 ./scripts/verify-setup.sh
@@ -95,10 +101,11 @@ More accounts exist. Finding them is part of the fun.
 
 | Time | Section | What You'll Do |
 |---|---|---|
-| 0:00–1:00 | **PD Open Source Toolkit** | Run the full recon pipeline, write a Nuclei template |
-| 1:00–1:30 | **PD Cloud Platform** | See the same target scanned at enterprise scale |
+| 0:00–1:10 | **PD Open Source Toolkit** | Run the full recon pipeline, write a Nuclei template |
+| 1:10–1:15 | **Neo Token Challenge** | Found all 14 scanner-detectable vulns? Free Neo tokens. |
+| 1:15–1:30 | **PD Cloud Platform** | Same target at enterprise scale — add it to your own dashboard |
 | 1:30–1:55 | **Neo AI Pentesting** | Watch an AI agent find business logic bugs live |
-| 1:55–2:00 | **Wrap-Up** | Resources, Q&A, go hack the CTF |
+| 1:55–2:00 | **Wrap-Up** | Resources, Q&A |
 
 ---
 
@@ -107,11 +114,11 @@ More accounts exist. Finding them is part of the fun.
 ```
 ├── README.md              ← You are here
 ├── CHEATSHEET.md          ← Pipeline commands & Nuclei template syntax (print this)
+├── NEO.md                 ← Suggested prompts for the Neo AI segment
 ├── TARGETS.md             ← Alternative targets to practice on after the workshop
 ├── subs-wordlist.txt      ← Subdomain wordlist for active brute forcing
 ├── templates/
-│   ├── starter.yaml       ← Skeleton template for the hands-on exercise
-│   └── examples/          ← Completed example templates
+│   └── starter.yaml       ← Skeleton template for the hands-on exercise
 └── scripts/
     └── verify-setup.sh    ← Checks your tool installation
 ```
