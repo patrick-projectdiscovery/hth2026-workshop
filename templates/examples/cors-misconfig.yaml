@@ -1,0 +1,30 @@
+id: spaceballs-cors-misconfig
+
+info:
+  name: Spaceballs CORS Misconfiguration
+  author: hth2026-workshop
+  severity: high
+  description: |
+    The API reflects arbitrary Origin headers in Access-Control-Allow-Origin
+    with credentials allowed, enabling cross-origin data theft.
+  tags: misconfiguration,cors,spaceballs
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/api/employees"
+
+    headers:
+      Origin: "https://evil.com"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "evil.com"
+
+      - type: word
+        part: header
+        words:
+          - "Access-Control-Allow-Credentials"

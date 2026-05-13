@@ -1,0 +1,34 @@
+id: spaceballs-debug-config
+
+info:
+  name: # TODO: Give your template a descriptive name
+  author: # TODO: Your handle here
+  severity: # TODO: How bad is this? (info, low, medium, high, critical)
+  description: |
+    # TODO: What does this template detect?
+    # Hint: There's an endpoint on the staging subdomain that
+    # exposes internal configuration including secrets.
+  tags: exposure,config,spaceballs
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/___________"  # TODO: What path leaks the config?
+
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - ___  # TODO: What status code means "found it"?
+
+      - type: word
+        words:
+          - "___________"  # TODO: What words would appear in a leaked config?
+          - "___________"  # TODO: Add another telltale word
+        condition: or
+
+    # BONUS: Add an extractor to pull out the actual secret values
+    # extractors:
+    #   - type: regex
+    #     regex:
+    #       - '"secret_key":\s*"([^"]+)"'

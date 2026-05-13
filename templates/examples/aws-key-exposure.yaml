@@ -1,0 +1,26 @@
+id: spaceballs-aws-key-exposure
+
+info:
+  name: Spaceballs AWS Key in Frontend JavaScript
+  author: hth2026-workshop
+  severity: critical
+  description: |
+    A frontend JavaScript file contains an AWS access key ID,
+    potentially granting access to cloud infrastructure.
+  tags: exposure,cloud,aws,token,spaceballs
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers:
+      - type: regex
+        regex:
+          - "AKIA[A-Z0-9]{16}"
+
+    extractors:
+      - type: regex
+        name: aws-key
+        regex:
+          - "AKIA[A-Z0-9]{16}"
