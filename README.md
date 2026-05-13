@@ -43,6 +43,7 @@ If you don't want to install Go or the tools natively:
 ```bash
 docker pull projectdiscovery/nuclei
 docker pull projectdiscovery/subfinder
+docker pull projectdiscovery/dnsx
 docker pull projectdiscovery/httpx
 docker pull projectdiscovery/naabu
 docker pull projectdiscovery/katana
@@ -81,8 +82,8 @@ If all required tools show `[✓]`, you're good to go.
 |---|---|
 | Corporate Site | https://spaceballscorp.com |
 | Employee Portal | https://portal.spaceballscorp.com |
-| Admin Panel | https://admin.spaceballscorp.com |
-| API Documentation | https://docs.spaceballscorp.com |
+
+> There are more subdomains in scope. Finding them is the first part of the workshop.
 
 > ⚠️ **This is a deliberately vulnerable application.** Only interact with it during the workshop or with explicit permission. Do not attack infrastructure outside of the target scope.
 
@@ -101,8 +102,10 @@ More accounts exist. Finding them is part of the fun.
 
 | Time | Section | What You'll Do |
 |---|---|---|
-| 0:00–1:10 | **PD Open Source Toolkit** | Run the full recon pipeline, write a Nuclei template |
-| 1:10–1:15 | **Neo Token Challenge** | Found all 14 scanner-detectable vulns? Free Neo tokens. |
+| 0:00–0:20 | **Recon Pipeline** | Subdomain discovery, DNS resolution, HTTP probing |
+| 0:20–0:40 | **Vulnerability Scanning** | Run Nuclei against the target, find 10+ findings |
+| 0:40–1:10 | **Write a Nuclei Template** | Write a template for an endpoint you found during recon |
+| 1:10–1:15 | **Neo Token Challenge** | Found all 10 scanner-detectable vulns with the open source pipeline? Show your nuclei output to a facilitator for free Neo tokens. |
 | 1:15–1:30 | **PD Cloud Platform** | Same target at enterprise scale — add it to your own dashboard |
 | 1:30–1:55 | **Neo AI Pentesting** | Watch an AI agent find business logic bugs live |
 | 1:55–2:00 | **Wrap-Up** | Resources, Q&A |
