@@ -234,10 +234,12 @@ http:
 
 > There are more subdomains. Finding them is part of the exercise — use subfinder and dnsx.
 
-### Accounts
+### Your Account
 | User | Pass | Role |
 |---|---|---|
 | `lone_starr` | `12345` | Employee |
+
+More accounts exist — finding them is part of the exercise.
 
 ---
 

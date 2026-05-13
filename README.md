@@ -87,12 +87,12 @@ If all required tools show `[✓]`, you're good to go.
 
 > ⚠️ **This is a deliberately vulnerable application.** Only interact with it during the workshop or with explicit permission. Do not attack infrastructure outside of the target scope.
 
-### Test Accounts
+### Your Account
 | Username | Password | Role |
 |---|---|---|
 | `lone_starr` | `12345` | Employee |
 
-More accounts exist. Finding them is part of the fun.
+More accounts exist. Finding them is part of the exercise.
 
 ---
 
