@@ -229,12 +229,10 @@ http:
 
 | Subdomain | What's There |
 |---|---|
-| `spaceballscorp.com` | Corporate site |
-| `portal.spaceballscorp.com` | Employee portal (login) |
-| `admin.spaceballscorp.com` | Admin panel |
-| `api.spaceballscorp.com` | REST API |
-| `docs.spaceballscorp.com` | API docs (Swagger) |
-| `staging.spaceballscorp.com` | "Forgotten" staging |
+| `spaceballscorp.com` | Corporate site — start your recon here |
+| `portal.spaceballscorp.com` | Employee portal (your login) |
+
+> There are more subdomains. Finding them is part of the exercise — use subfinder and dnsx.
 
 ### Accounts
 | User | Pass | Role |
@@ -245,29 +243,19 @@ http:
 
 ---
 
-## Neo Token Challenge — Vuln Checklist
+## Neo Token Challenge — What to Find
 
-Find all 14 and show your nuclei output to a facilitator for free Neo tokens.
+There are **14 scanner-detectable findings** across the target environment. Find them all and show your Nuclei output to a facilitator for free Neo tokens.
 
-**Section 1 — Scanner-detectable (Nuclei + tools)**
+Think in categories — not every host, endpoint, or response header is what it appears to be:
 
-- [ ] 1. Exposed `.env` file on `staging.spaceballscorp.com`
-- [ ] 2. Debug config dump at `/debug/config` (JWT secret, AWS keys)
-- [ ] 3. Git config exposure at `/.git/config`
-- [ ] 4. Directory listing on `docs.spaceballscorp.com/static/`
-- [ ] 5. Server status at `portal.spaceballscorp.com/server-status`
-- [ ] 6. Missing security headers (`CSP`, `X-Frame-Options`, `HSTS`, `X-Content-Type-Options`)
-- [ ] 7. Default admin credentials (`dark_helmet` / `spaceballs`)
-- [ ] 8. Outdated jQuery (v3.3.1 — CVE-2020-11022/11023)
-- [ ] 9. AWS key hardcoded in `/static/js/portal.js`
-- [ ] 10. CORS misconfiguration (reflects arbitrary origin with credentials)
+- **Exposed files and config endpoints** — what shouldn't be publicly accessible?
+- **Missing security controls** — headers, rate limits, access restrictions
+- **Technology fingerprinting** — what libraries and versions does the app expose?
+- **Credential and secret exposure** — are secrets where they shouldn't be?
+- **CORS and cross-origin handling** — does the API enforce origin restrictions?
 
-**Section 2 — Scale findings (PDCP)**
-
-- [ ] 11. Staging vs production posture gap (debug endpoints on staging only)
-- [ ] 12. Hardcoded credentials in static JS (caught on every new deploy)
-- [ ] 13. Deploy token in `staging/.git/config`
-- [ ] 14. Inconsistent auth scope (portal JWT accepted on admin API endpoints)
+> Scan all subdomains you discover during recon, not just the portal. The interesting findings are not all in one place.
 
 ---
 

@@ -31,7 +31,7 @@ Log in to the Spaceballs portal at `https://portal.spaceballscorp.com` as `lone_
 > "Look for any approval workflow endpoints that could be exploited — for example, submitting and approving your own requests."
 
 **Chain findings:**
-> "I found the JWT secret at staging.spaceballscorp.com/debug/config. Use it to access endpoints I shouldn't be able to reach as lone_starr."
+> "I found a leaked JWT secret in the environment. Use it to access endpoints I shouldn't be able to reach as lone_starr."
 
 ---
 
