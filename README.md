@@ -20,6 +20,8 @@ cd hth2026-workshop
 
 > Run all workshop commands from inside this directory — the wordlist and templates are referenced by relative path.
 
+**Sign up for PDCP free tier** at [cloud.projectdiscovery.io](https://cloud.projectdiscovery.io) — you'll need this for the cloud platform section.
+
 ### Verify your setup
 ```bash
 chmod +x scripts/verify-setup.sh && ./scripts/verify-setup.sh
@@ -93,8 +95,9 @@ More accounts exist. Finding them is part of the fun.
 
 | Time | Section | What You'll Do |
 |---|---|---|
-| 0:00–1:00 | **PD Open Source Toolkit** | Run the full recon pipeline, write a Nuclei template |
-| 1:00–1:30 | **PD Cloud Platform** | See the same target scanned at enterprise scale |
+| 0:00–1:10 | **PD Open Source Toolkit** | Run the full recon pipeline, write a Nuclei template |
+| 1:10–1:15 | **Neo Token Challenge** | Use your findings to unlock a gated endpoint with Neo |
+| 1:15–1:30 | **PD Cloud Platform** | See the same target scanned at enterprise scale |
 | 1:30–1:55 | **Neo AI Pentesting** | Watch an AI agent find business logic bugs live |
 | 1:55–2:00 | **Wrap-Up** | Resources, Q&A, go hack the CTF |
 
@@ -105,11 +108,11 @@ More accounts exist. Finding them is part of the fun.
 ```
 ├── README.md              ← You are here
 ├── CHEATSHEET.md          ← Pipeline commands & Nuclei template syntax (print this)
+├── NEO.md                 ← Suggested prompts for the Neo AI segment
 ├── TARGETS.md             ← Alternative targets to practice on after the workshop
 ├── subs-wordlist.txt      ← Subdomain wordlist for active brute forcing
 ├── templates/
-│   ├── starter.yaml       ← Skeleton template for the hands-on exercise
-│   └── examples/          ← Completed example templates
+│   └── starter.yaml       ← Skeleton template for the hands-on exercise
 └── scripts/
     └── verify-setup.sh    ← Checks your tool installation
 ```
