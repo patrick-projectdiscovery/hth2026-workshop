@@ -78,6 +78,7 @@ fi
 # Check target reachability
 echo ""
 echo -e "${YELLOW}Checking target reachability...${NC}"
+echo -e "${YELLOW}Note: targets are only live during the workshop — red X's here are expected if you're running this beforehand.${NC}"
 echo ""
 for sub in "" "portal." "admin." "docs." "api." "staging."; do
   HOST="${sub}spaceballscorp.com"

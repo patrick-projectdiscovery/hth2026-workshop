@@ -1,7 +1,7 @@
-id: spaceballs-debug-config
+id: my-first-template  # Change this — must be unique across all templates in a scan
 
 info:
-  name: # TODO: Give your template a descriptive name
+  name: My First Detection Template  # ⚠️ REQUIRED — Nuclei rejects templates with an empty name. Change this.
   author: # TODO: Your handle here
   severity: # TODO: How bad is this? (info, low, medium, high, critical)
   description: |
