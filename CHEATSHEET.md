@@ -247,13 +247,18 @@ http:
 
 There are **14 scanner-detectable findings** across the target environment. Find them all and show your Nuclei output to a facilitator for free Neo tokens.
 
-Think in categories — not every host, endpoint, or response header is what it appears to be:
+**10 findings** are discoverable with the open source pipeline:
 
-- **Exposed files and config endpoints** — what shouldn't be publicly accessible?
-- **Missing security controls** — headers, rate limits, access restrictions
-- **Technology fingerprinting** — what libraries and versions does the app expose?
-- **Credential and secret exposure** — are secrets where they shouldn't be?
-- **CORS and cross-origin handling** — does the API enforce origin restrictions?
+| Category | Count |
+|---|---|
+| Secrets and credential exposures | 4 |
+| Exposed endpoints and files | 2 |
+| CORS misconfiguration | 1 |
+| Missing security controls | 1 |
+| Default credentials | 1 |
+| Known CVE (tech fingerprinting) | 1 |
+
+**4 more** become visible when you view the full asset inventory in PDCP.
 
 > Scan all subdomains you discover during recon, not just the portal. The interesting findings are not all in one place.
 
